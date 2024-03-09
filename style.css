@@ -8,7 +8,6 @@
 
 body {
 	width: 100%;
-	/* padding: 0 10rem; */
 	font-size: 62.5%;
 	font-family: "Poppins", sans-serif;
 	display: flex;
@@ -17,6 +16,9 @@ body {
 	align-items: center;
 	height: 100vh;
 	background-color: hsl(0, 0%, 98%);
+	@media (max-width: 699px) {
+		margin: 7rem 0;
+	}
 }
 
 header {
@@ -39,6 +41,18 @@ header {
 		margin-bottom: 4rem;
 		padding: 0 2em;
 	}
+	@media (max-width: 699px) {
+		width: 90%;
+		h1 {
+			font-size: 1.519rem;
+		}
+		h2 {
+			font-size: 1.5rem;
+		}
+		p {
+			padding: 0 0em;
+		}
+	}
 }
 
 main {
@@ -47,6 +61,10 @@ main {
 	justify-content: center;
 	align-items: center;
 	gap: 2rem;
+	@media (max-width: 699px) {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .card-style {
