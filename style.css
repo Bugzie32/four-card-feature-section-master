@@ -14,7 +14,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	min-height: 100vh;
 	background-color: hsl(0, 0%, 98%);
 	@media (max-width: 699px) {
 		margin: 7rem 0;
